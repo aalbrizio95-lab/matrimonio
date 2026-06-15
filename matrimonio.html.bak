@@ -11,10 +11,9 @@
 <body class="beige">
 
 <nav class="menu">
-  <a href="matrimonio.html">Il Matrimonio</a>
+  <a href="index.html">Home</a>
   <a href="#">Lista di Nozze</a>
-  <a href="#">Conferma Partecipazione</a>
-  <a href="#">Foto di noi</a>
+  <a href="foto.html">Foto di noi</a>
 </nav>
 
 <section class="hero-small">
@@ -152,11 +151,6 @@ nuovo capitolo
 
   </div>
 
-  <!-- LINK HOME -->
-  <div class="center-home">
-    <a href="index.html">Home</a>
-  </div>
-
 </section>
 
 <section class="section light">
@@ -164,7 +158,7 @@ nuovo capitolo
   <div class="text info">
     <h2>Conferma partecipazione</h2>
 
-    <form name="rsvp" method="POST" data-netlify="true" action="grazie">
+    <form name="rsvp" method="POST" data-netlify="true" action="/grazie">
 
       <input type="hidden" name="form-name" value="rsvp">
 
@@ -191,4 +185,11 @@ nuovo capitolo
 </section>
 
 </body>
+
+<!-- LINK HOME FINALE -->
+<section class="section center-home">
+  <p>
+    <a href="index.html">← Torna alla Home</a>
+  </p>
+</section>
 </html>
