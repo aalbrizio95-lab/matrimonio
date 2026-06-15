@@ -1,0 +1,335 @@
+/* FONT */
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+/* MENU */
+/* MENU */
+.menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;   /* verticale ✅ */
+  gap: 8px;
+}
+
+.menu a {
+  color: white;              /* bianco ✅ */
+  text-decoration: none;
+  font-style: italic;
+  font-family: 'Playfair Display', serif; /* font elegante ✅ */
+  font-size: 18px;
+
+  text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+
+  transition: opacity 0.3s;
+}
+
+.menu a:hover {
+  opacity: 0.7;
+}
+
+/* ANIMAZIONE */
+@keyframes menuFade {
+  from {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RITARDI */
+.menu a:nth-child(1) { animation-delay: 0.3s; }
+.menu a:nth-child(2) { animation-delay: 0.6s; }
+.menu a:nth-child(3) { animation-delay: 0.9s; }
+.menu a:nth-child(4) { animation-delay: 1.2s; }
+``
+/* ANIMAZIONE */
+@keyframes menuFade {
+  0% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ANIMAZIONE MENU */
+@keyframes menuFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RITARDI MENU */
+.menu a:nth-child(1) { animation-delay: 0.3s; }
+.menu a:nth-child(2) { animation-delay: 0.6s; }
+.menu a:nth-child(3) { animation-delay: 0.9s; }
+.menu a:nth-child(4) { animation-delay: 1.2s; }
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("sfondo.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-small {
+  position: relative;
+  height: 60vh;
+  background: url("anello.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-small::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+}
+
+/* TITOLI */
+.title {
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 80px;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* ANIMAZIONE TITOLI */
+.title-anim {
+  opacity: 1;
+  transform: translateY(40px);
+  animation: titleFade 1.5s ease forwards;
+}
+
+@keyframes titleFade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* NOMI HOME */
+.name {
+  font-size: 80px;
+  color: white;
+  font-style: italic;
+  margin: 0;
+}
+
+.and {
+  font-size: 30px;
+  color: white;
+}
+
+/* BACKGROUND */
+.beige {
+  background: #f3e9df;
+}
+
+/* SEZIONI */
+.section {
+  padding: 80px 20px;
+}
+
+.section.light {
+  background: #ebe3da;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.grid.reverse {
+  flex-direction: row-reverse;
+}
+
+/* TESTO */
+.text {
+  flex: 1;
+  text-align: center;
+}
+
+.text.left {
+  text-align: left;
+}
+
+.text h2 {
+  font-style: italic;
+  font-size: 34px;
+  color: #6b5b4d;
+  margin-bottom: 20px;
+}
+
+.text p {
+  max-width: 350px;
+  margin: auto;
+  line-height: 1.8;
+  color: #6b5b4d;
+}
+
+/* FOTO */
+.photo {
+  flex: 1;
+}
+
+.polaroid {
+  background: white;
+  padding: 15px;
+  transform: rotate(-3deg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.polaroid img {
+  width: 100%;
+  display: block;
+}
+
+/* SCOTCH */
+.polaroid::before {
+  content: "";
+  width: 70px;
+  height: 20px;
+  background: rgba(255,255,255,0.6);
+  position: absolute;
+  top: -10px;
+  left: 40%;
+  transform: rotate(8deg);
+}
+
+.polaroid::after {
+  content: "";
+  width: 60px;
+  height: 18px;
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: -10px;
+  right: 30%;
+  transform: rotate(-10deg);
+}
+
+/* MAPPA */
+.map {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* LINK HOME */
+.center-home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.center-home a {
+  font-style: italic;
+  color: #6b5b4d;
+  text-decoration: underline;
+}
+
+/* FORM RSVP */
+form {
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+form button {
+  background: #8b6f5c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+form button:hover {
+  background: #6b5b4d;
+}
+
+/* ANIMAZIONI GENERICHE */
+.fade-in {
+  opacity: 1;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}
+/* ANIMAZIONE MENU (SAFE) */
+.menu a {
+  animation: menuAppear 0.8s ease both;
+}
+
+/* RITARDI */
+.menu a:nth-child(1) { animation-delay: 0.2s; }
+.menu a:nth-child(2) { animation-delay: 0.4s; }
+.menu a:nth-child(3) { animation-delay: 0.6s; }
+.menu a:nth-child(4) { animation-delay: 0.8s; }
+
+/* KEYFRAMES */
+@keyframes menuAppear {
+  from {
+    transform: translateY(-10px);
+    opacity: 0.4;   /* ⚠️ NON 0 → così NON spariscono */
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
