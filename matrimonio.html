@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
+<!DOCTYPE html><!DOCTYPE html<head>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <title>Il Matrimonio</title>
@@ -20,83 +18,84 @@
   <h1 class="title title-anim">Il Matrimonio</h1>
 </section>
 
+<!-- INTRO -->
 <section class="section">
   <div class="grid">
+
+    <!-- FOTO SEMPRE PRIMA -->
+    <div class="photo polaroid fade-in">
+      <img src="panchina.jpg" alt="Foto">
+    </div>
 
     <div class="text fade-in">
       <h2>Non vediamo l’ora di dire di sì davanti a tutti voi!</h2>
 
       <p>
-		A quanto pare ci sposiamo sul serio!
+        A quanto pare ci sposiamo sul serio!
+        Siamo felicissimi, sarà un giorno
+        speciale per noi, ce lo ricorderemo per
+        tutta la vita.
 
-		Siamo felicissimi, sarà un giorno
-		speciale per noi, ce lo ricorderemo per
-		tutta la vita.
+        Nel sito troverete informazioni come
+        luogo, data, ora, e qualche dettaglio utile
+        per vivere insieme a noi un momento
+        che ricorderemo per sempre.
 
-		Nel sito troverete informazioni come
-		luogo, data, ora, e qualche dettaglio utile
-		per vivere insieme a noi un momento
-		che ricorderemo per sempre.
-
-		La cosa più importante però siete voi:
-		non vediamo l’ora di avervi al nostro
-		fianco per festeggiare l’inizio di questo
-nuovo capitolo
+        La cosa più importante però siete voi:
+        non vediamo l’ora di avervi al nostro
+        fianco per festeggiare l’inizio di questo
+        nuovo capitolo
       </p>
-    </div>
-
-    <div class="photo polaroid fade-in">
-      <img src="panchina.jpg" alt="Foto">
     </div>
 
   </div>
 </section>
 
+<!-- LUOGO -->
 <section class="section light">
-
   <div class="grid">
 
-    <!-- FOTO -->
     <div class="photo polaroid">
       <img src="foto-luogo.jpg" alt="Luogo matrimonio">
     </div>
 
-    <!-- TESTO -->
     <div class="text left">
       <h2>Data e luogo</h2>
 
       <p>📅 Venerdì 25 Settembre 2026</p>
       <p>🕒 Dalle ore 11:30 in poi</p>
-      <p>📍 Parco Gambrinus<br>
-         Via Capitello 18,<br>
-         San Polo di Piave (TV)
+      <p>
+        📍 Parco Gambrinus<br>
+        Via Capitello 18,<br>
+        San Polo di Piave (TV)
       </p>
 
-      <!-- MAPPA CLICCABILE -->
-		<iframe
-		  class="map"
-		  src="https://maps.google.com/maps?q=Parco%20Gambrinus%20San%20Polo%20di%20Piave&t=&z=15&ie=UTF8&iwloc=&output=embed"
-		  loading="lazy">
-		</iframe>
-		
-  <!-- LINK GOOGLE MAPS -->
-  <p>
-    <a href="https://www.google.com/maps?q=Parco+Gambrinus+San+Polo+di+Piave" target="_blank">
-      Apri su Google Maps
-    </a>
-  </p>
+      <iframe
+        class="map"
+        src="https://maps.google.com/maps?q=Parco%20Gambrinus%20San%20Polo%20di%20Piave&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        loading="lazy">
+      </iframe>
 
+      <p>
+        <a href="https://www.google.com/maps?q=Parco+Gambrinus+San+Polo+di+Piave" target="_blank">
+          Apri su Google Maps
+        </a>
+      </p>
 
     </div>
 
   </div>
-
 </section>
-<section class="section">
 
+<!-- INFO (REVERSE) -->
+<section class="section">
   <div class="grid reverse">
 
-    <!-- TESTO -->
+    <!-- FOTO PRIMA (fix mobile) -->
+    <div class="photo polaroid right">
+      <img src="foto1.jpg" alt="Foto">
+    </div>
+
     <div class="text info">
       <h2>Informazioni utili</h2>
 
@@ -116,20 +115,17 @@ nuovo capitolo
       </p>
     </div>
 
-    <!-- FOTO -->
-    <div class="photo polaroid right">
-      <img src="foto1.jpg" alt="Foto">
-    </div>
-
   </div>
-
 </section>
 
+<!-- MENU PRANZO -->
 <section class="section light">
-
   <div class="grid">
 
-    <!-- TESTO -->
+    <div class="photo polaroid">
+      <img src="foto3.jpg" alt="Foto">
+    </div>
+
     <div class="text info">
       <h2>Menù del pranzo</h2>
 
@@ -144,22 +140,16 @@ nuovo capitolo
       </p>
     </div>
 
-    <!-- FOTO -->
-    <div class="photo polaroid">
-      <img src="foto3.jpg" alt="Foto">
-    </div>
-
   </div>
-
 </section>
 
+<!-- FORM -->
 <section class="section light">
-
   <div class="text info">
+
     <h2>Conferma partecipazione</h2>
 
     <form name="rsvp" method="POST" data-netlify="true" action="/grazie">
-
       <input type="hidden" name="form-name" value="rsvp">
 
       <p>
@@ -177,19 +167,19 @@ nuovo capitolo
       <p>
         <button type="submit">Invia</button>
       </p>
-
     </form>
 
   </div>
-
 </section>
 
-</body>
-
-<!-- LINK HOME FINALE -->
+<!-- LINK HOME -->
 <section class="section center-home">
   <p>
     <a href="index.html">← Torna alla Home</a>
   </p>
 </section>
+
+</body>
 </html>
+
+<html lang="it">
