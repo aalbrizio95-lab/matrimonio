@@ -270,7 +270,6 @@ form button {
   100% { transform: scale(1); }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
 
   .grid {
@@ -278,9 +277,20 @@ form button {
     text-align: center;
   }
 
-  .photo,
+  /* 🔥 FIX PRINCIPALE */
+  .grid.reverse {
+    flex-direction: column;
+  }
+
+  /* 🔥 ORDINE SEMPRE FOTO → TESTO */
+  .photo {
+    width: 100%;
+    order: 1;
+  }
+
   .text {
     width: 100%;
+    order: 2;
   }
 
   .title {
@@ -295,10 +305,15 @@ form button {
     height: 50vh;
   }
 
+  /* FOTO DRITTE E CENTRATE */
   .polaroid {
     transform: rotate(0deg);
+    max-width: 500px;
+    margin: auto;
   }
+
 }
+
 /* TITOLI FOTO */
 .title-photo {
   font-size: 32px;
