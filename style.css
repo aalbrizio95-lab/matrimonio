@@ -126,8 +126,9 @@ body {
 /* GRID */
 .grid {
   display: flex;
-  gap: 40px;
   align-items: center;
+  justify-content: center;
+  gap: 40px;
   max-width: 1000px;
   margin: auto;
 }
@@ -162,6 +163,8 @@ body {
 /* FOTO */
 .photo {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .polaroid {
@@ -270,6 +273,7 @@ form button {
   100% { transform: scale(1); }
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
 
   .grid {
@@ -277,20 +281,19 @@ form button {
     text-align: center;
   }
 
-  /* 🔥 FIX PRINCIPALE */
   .grid.reverse {
     flex-direction: column;
   }
 
-  /* 🔥 ORDINE SEMPRE FOTO → TESTO */
-  .photo {
-    width: 100%;
-    order: 1;
-  }
-
+  .photo,
   .text {
     width: 100%;
-    order: 2;
+  }
+
+  .polaroid {
+    transform: rotate(0deg);
+    max-width: 500px;
+    margin: auto;
   }
 
   .title {
@@ -304,42 +307,9 @@ form button {
   .video-hero {
     height: 50vh;
   }
-
-  /* FOTO DRITTE E CENTRATE */
-  .polaroid {
-    transform: rotate(0deg);
-    max-width: 500px;
-    margin: auto;
-  }
-
 }
 
 /* TITOLI FOTO */
-.title-photo {
-  font-size: 32px;
-  font-style: italic;
-  color: #6b5b4d;
-  margin-bottom: 15px;
-}
-
-/* TESTO FOTO */
-.desc-photo {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #6b5b4d;
-  max-width: 400px;
-  margin: auto;
-}
-/* BLOCCA layout corretto */
-.grid {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* INVERSIONE SICURA */
-.grid.reverse {
-  flex-direction: row-reverse !important;
-}
 .title-photo {
   font-size: 30px;
   font-style: italic;
@@ -348,6 +318,7 @@ form button {
   margin-bottom: 15px;
 }
 
+/* TESTO FOTO */
 .desc-photo {
   font-size: 18px;
   line-height: 1.8;
@@ -356,6 +327,8 @@ form button {
   max-width: 400px;
   margin: auto;
 }
+
+/* LINK HOME */
 .center-home {
   text-align: center;
   margin-top: 40px;
@@ -372,6 +345,7 @@ form button {
 .center-home a:hover {
   opacity: 0.7;
 }
+
 /* HERO VIAGGIO */
 .viaggio-hero {
   height: 100vh;
@@ -383,7 +357,6 @@ form button {
 
 .viaggio-hero .title {
   color: #f2e7dc;
-  text-align: center;
   line-height: 1.2;
 }
 
@@ -395,5 +368,4 @@ form button {
 
 .qr img {
   width: 140px;
-  height: auto;
 }
