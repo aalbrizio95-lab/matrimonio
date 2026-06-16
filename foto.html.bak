@@ -14,7 +14,7 @@
 <nav class="menu">
   <a href="index.html">Home</a>
   <a href="matrimonio.html">Il Matrimonio</a>
-  <a href="#">Lista di Nozze</a>
+  <a href="viaggio.html">Lista di Nozze</a>
 </nav>
 
 <!-- VIDEO HERO -->
@@ -52,6 +52,40 @@
   </div>
 </section>
 
+<!-- NY -->
+<section class="section">
+  <div class="grid reverse">
+
+    <div class="photo polaroid">
+      <img src="NY.jpg">
+    </div>
+
+    <div class="text">
+      <p class="desc-photo">
+        Ecco dove tutto è iniziato, New York, estate 2012.. Sotto un po' di foto sparse di noi, di quello che siamo e di quello che facciamo ❤️
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MESSICO -->
+<section class="section light">
+  <div class="grid">
+
+    <div class="text">
+      <p>
+        MESSICO!!! Anche dall'altra parte del mondo siamo andati, e siamo pronti per tornarci!
+      </p>
+    </div>
+
+    <div class="photo polaroid right">
+      <img src="messico.jpg">
+    </div>
+
+  </div>
+</section>
+
 <!-- PANINI -->
 <section class="section">
   <div class="grid reverse">
@@ -62,7 +96,7 @@
 
     <div class="text">
       <p class="desc-photo">
-        Impossibile per noi resistere ai paninazzi ❤️
+        Impossibile per noi resistere ai paninazzi in giro per il mondo ❤️ Qui ad esempio siamo a Leuven..❤️
       </p>
     </div>
 
@@ -107,11 +141,26 @@
   <div class="grid">
 
     <div class="text">
-      <p class="title-photo">Per non parlare dello sci 🎿</p>
+      <p class="title-photo">Per non parlare dello sci 🎿 (foto appena dopo aver fatto la Piculin, pista più pendente d'Europa!)</p>
     </div>
 
     <div class="photo polaroid right">
       <img src="sci.jpg">
+    </div>
+
+  </div>
+</section>
+
+<!-- SCI2 -->
+<section class="section light">
+  <div class="grid">
+
+    <div class="text">
+      <p class="title-photo">Immancabile una foto davanti al Pelmo</p>
+    </div>
+
+    <div class="photo polaroid right">
+      <img src="pelmo.jpg">
     </div>
 
   </div>
@@ -127,7 +176,23 @@
 
     <div class="text">
       <p>
-        Montagna bella d’estate e d’inverno!
+        Montagna bella d'inverno si, ma anche d'estate!!
+      </p>
+    </div>
+
+  </div>
+</section>
+<!-- MONTAGNA2 -->
+<section class="section">
+  <div class="grid reverse">
+
+    <div class="photo polaroid">
+      <img src="montagnaLago.jpg">
+    </div>
+
+    <div class="text">
+      <p>
+        Una camminata più bella dell'altra..
       </p>
     </div>
 
@@ -184,6 +249,24 @@
 
   </div>
 </section>
+
+<!-- Panchina -->
+<section class="section light">
+  <div class="grid">
+
+    <div class="text">
+      <p>
+        Ecco la panchina della proposta! Per chi sa perchè lì...
+      </p>
+    </div>
+
+    <div class="photo polaroid right">
+      <img src="panchina.jpg">
+    </div>
+
+  </div>
+</section>
+
 
 <!-- FINALE -->
 <section class="section">

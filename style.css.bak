@@ -52,6 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hero-small {
@@ -355,4 +356,29 @@ form button {
 
 .center-home a:hover {
   opacity: 0.7;
+}
+/* HERO VIAGGIO */
+.viaggio-hero {
+  height: 100vh;
+  background: url("viaggio.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viaggio-hero .title {
+  color: #f2e7dc;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* QR */
+.qr {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.qr img {
+  width: 140px;
+  height: auto;
 }

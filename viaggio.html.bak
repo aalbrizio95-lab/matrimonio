@@ -1,7 +1,8 @@
-<!DOCTYPE html><!DOCTYPE htmlit">
+<!DOCTYPE html>
+<html lang="it">
 <head>
 <meta charset="UTF-8">
-<title>Lista Nozze</title>
+<title>Viaggio di Nozze</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -23,29 +24,184 @@
   </h1>
 </section>
 
-<!-- CONTENUTO -->
+<!-- INTRO -->
 <section class="section light">
+  <div class="grid">
 
-  <div class="text">
-
-    <p class="title-photo">Lista Nozze</p>
-
-    <p class="desc-photo">
-      Come sapete è da diversi anni che sogniamo di fare il giro  
-      dei parchi della West Coast, e quale occasione migliore del  
-      viaggio di nozze per far avverare questo nostro desiderio.  
-      <br><br>
-      Grazie per il vostro sostegno, se volete contribuire a  
-      realizzare la nostra luna di miele da sogno ve ne saremo  
-      profondamente grati ❤️
-    </p>
-
-    <!-- QR -->
-    <div class="qr">
-      <img src="qr.jpg" alt="QR Code">
+    <div class="text">
+      <p class="desc-photo">
+        Sono tanti anni che sogniamo di fare il giro dei parchi americani assieme,
+        per questo abbiamo deciso di scegliere questa meta come nostro viaggio di nozze,
+        ma può esistere una luna di miele senza un po' di mare e puro relax?
+        Certo che no! In questa foto potete vedere una bozza di quello che è il viaggio, ma sotto ve lo spieghiamo per bene!
+      </p>
     </div>
 
-    <!-- DATI -->
+    <div class="photo polaroid right">
+      <img src="viaggio1.jpg">
+    </div>
+
+  </div>
+</section>
+
+<!-- HAWAII -->
+<section class="section">
+  <div class="grid reverse">
+
+    <div class="photo polaroid">
+      <img src="hawaii.jpg">
+    </div>
+
+    <div class="text">
+      <p class="desc-photo">
+        Abbiamo pensato di iniziare il nostro viaggio di nozze alle Hawaiiiiiii!
+        Una settimana di relax, mare, camminate tra i vulcani alla scoperta
+        di questa meravigliosa isola.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- YELLOWSTONE -->
+<section class="section light">
+  <div class="grid">
+
+    <div class="text">
+      <p class="desc-photo">
+        Dopo circa una settimana di relax prenderemo un volo per lo Yellowstone
+        e inizieremo il vero giro dei parchi, partendo dai geyser,
+        gli orsi e i bisonti americani dello Yellowstone National Park.
+      </p>
+    </div>
+
+    <div class="photo polaroid right">
+      <img src="yellowstone.jpg">
+    </div>
+
+  </div>
+</section>
+
+<!-- BRYCE -->
+<section class="section">
+  <div class="grid reverse">
+
+    <div class="photo polaroid">
+      <img src="bryce.jpg">
+    </div>
+
+    <div class="text">
+      <p class="desc-photo">
+        Dopo 3 giorni allo Yellowstone ci aspettano 10h di macchina (AIUTO!)
+        per raggiungere il Bryce Canyon e le sue bellezze, dove troveremo gli hoodoos, questi spettacolari pinnacoli di pietra!
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- MONUMENT -->
+<section class="section light">
+  <div class="grid">
+
+    <div class="text">
+      <p class="desc-photo">
+        Dopo il Bryce Canyon, ci dirigeremo verso la Monument Valley,
+        terra gestita dai Nativi Americani ricca di monoliti di terra rossa, qualcuno riconoscerà lo sfondo, qualcuno un po' stanchino.....
+      </p>
+    </div>
+
+    <div class="photo polaroid right">
+      <img src="monument.jpg">
+    </div>
+
+  </div>
+</section>
+
+<!-- ANTELOPE -->
+<section class="section">
+  <div class="grid reverse">
+
+    <div class="photo polaroid">
+      <img src="antelope.jpg">
+    </div>
+
+    <div class="text">
+      <p class="desc-photo">
+        Dalla Monument Valley ci spostiamo verso Antelope Canyon
+        uno dei famosissimi sfondi di windows!
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- GRAND -->
+<section class="section">
+  <div class="grid reverse">
+
+    <div class="photo polaroid">
+      <img src="grand.jpg">
+    </div>
+
+    <div class="text">
+      <p class="desc-photo">
+        E finalmente eccoci, il famosissimo GRAND CANYON!
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- VEGAS -->
+<section class="section light">
+  <div class="grid">
+
+    <div class="text">
+      <p class="desc-photo">
+        Dopo tutti questi parchi raggiungeremo Las Vegas,
+        chiederemo a qualche Elvis di sposarci di nuovo? O diventermo ricchi a Blackjack?
+      </p>
+    </div>
+
+    <div class="photo polaroid right">
+      <img src="vegas.jpg">
+    </div>
+
+  </div>
+</section>
+
+<!-- LOS ANGELES -->
+<section class="section">
+  <div class="grid reverse">
+
+    <div class="photo polaroid">
+      <img src="los.jpg">
+    </div>
+
+    <div class="text">
+      <p class="desc-photo">
+        Infine facciamo tappa a Los Angeles,
+        un giro per la città e poi si torna!
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINALE -->
+<section class="section light">
+  <div class="text">
+
+    <p class="desc-photo">
+      Questo è il viaggio che sogniamo di fare assieme per celebrare il nostro matrimonio
+      e iniziare al meglio la nostra vita da marito e moglie.
+      <br><br>
+      Se volete contribuire a realizzare la nostra luna di miele da sogno
+      ve ne saremo profondamente grati ❤️
+    </p>
+
     <p class="desc-photo">
       <strong>Beneficiario:</strong><br>
       Alessandro Albrizio Greta Fregonese
@@ -57,7 +213,6 @@
     </p>
 
   </div>
-
 </section>
 
 </body>
