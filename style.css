@@ -243,21 +243,22 @@ body {
 /* MOBILE */
 @media (max-width: 768px) {
 
+  .matrimonio-page .hero-small {
+    align-items: center;
+    padding-top: 0;
+  }
+
   .matrimonio-page .title-anim {
-    animation: none;
+    animation: none !important; /* 🔥 BLOCCA veramente l’animazione */
   }
 
   .matrimonio-page .title {
-    transform: translateY(30px);
+    transform: translateY(30px) !important;
   }
 
   .grid {
     flex-direction: column;
     text-align: center;
-  }
-
-  .matrimonio-page .title {
-    transform: translateY(30px) !important;
   }
 
   .grid.reverse {
