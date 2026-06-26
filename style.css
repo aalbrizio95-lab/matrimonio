@@ -251,8 +251,6 @@ body {
     transform: translateY(30px);
   }
 
-}
-
   .grid {
     flex-direction: column;
     text-align: center;
