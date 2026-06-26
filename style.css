@@ -62,9 +62,9 @@ body {
   background: url("anello.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* 🔥 NON più center */
+  padding-top: 80px;        /* 🔥 controlli la posizione */
 }
-
 .hero-small::after {
   content: "";
   position: absolute;
