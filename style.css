@@ -247,14 +247,10 @@ body {
     align-items: center;
     padding-top: 0;
   }
-
-  .matrimonio-page .title-anim {
-    animation: none !important; /* 🔥 BLOCCA veramente l’animazione */
-  }
-
-  .matrimonio-page .title {
-    transform: translateY(30px) !important;
-  }
+.matrimonio-page .hero-small {
+  align-items: flex-start;
+  padding-top: 80px;
+}
 
   .grid {
     flex-direction: column;
