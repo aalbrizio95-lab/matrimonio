@@ -47,7 +47,8 @@ body {
 
 /* HERO */
 .hero {
-  height: 100vh;
+  min-height: 100dvh; /* 🔥 FIX MOBILE */
+  height: 100dvh;
   background: url("sfondo.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
@@ -280,6 +281,10 @@ form button {
   bottom: 20px;
   font-size: 14px;
 }
+.matrimonio-page .hero-small {
+  align-items: center;     /* torna centrato verticalmente */
+  padding-top: 0;         /* rimuove lo spostamento */
+}
   .grid {
     flex-direction: column;
     text-align: center;
@@ -395,7 +400,7 @@ form button {
 /* INFO HERO (in basso a destra) */
 .hero-info {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
   right: 40px;
   text-align: right;
   color: white;
