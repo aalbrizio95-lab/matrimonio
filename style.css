@@ -252,6 +252,11 @@ body {
   padding-top: 80px;
 }
 
+  .matrimonio-page .hero-small {
+    align-items: flex-start !important; 
+    padding-top: 40px !important;
+  }
+
   .grid {
     flex-direction: column;
     text-align: center;
