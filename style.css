@@ -285,6 +285,9 @@ form button {
   align-items: center;     /* torna centrato verticalmente */
   padding-top: 0;         /* rimuove lo spostamento */
 }
+.matrimonio-page .title {
+  transform: translateY(30px);
+}
   .grid {
     flex-direction: column;
     text-align: center;
@@ -434,4 +437,20 @@ form button {
 .matrimonio-page .hero-small {
   align-items: flex-start; /* sposta verso l’alto */
   padding-top: 80px;        /* regola fine */
+}
+/* INFO NERE SOLO HOME */
+body:not(.viaggio-page):not(.matrimonio-page) .hero-info {
+  color: #6b5b4d; /* elegante marroncino */
+  text-shadow: none;
+}
+/* INFO SCURE SOLO HOME */
+.home-page .hero-info {
+  color: #6b5b4d;
+  text-shadow: none;
+}
+/* FORZA COLORE HOME */
+.home-page .hero-info,
+.home-page .hero-info p {
+  color: #6b5b4d !important;
+  text-shadow: none !important;
 }
