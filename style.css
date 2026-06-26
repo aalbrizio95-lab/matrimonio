@@ -286,7 +286,7 @@ form button {
   padding-top: 0;         /* rimuove lo spostamento */
 }
 .matrimonio-page .title {
-  transform: translateY(30px);
+  transform: translateY(50px);
 }
   .grid {
     flex-direction: column;
@@ -451,6 +451,6 @@ body:not(.viaggio-page):not(.matrimonio-page) .hero-info {
 /* FORZA COLORE HOME */
 .home-page .hero-info,
 .home-page .hero-info p {
-  color: #6b5b4d !important;
+  color: black  !important;
   text-shadow: none !important;
 }
