@@ -102,11 +102,15 @@ body {
 .name {
   font-size: 120px;
   color: white;
+  font-style: italic;        /* ✅ elegante */
+  font-weight: 400;          /* ✅ più fine */
+  letter-spacing: 2px;       /* ✅ arioso */
 }
 
 .and {
-  font-size: 30px;
+  font-size: 40px;
   color: white;
+  font-style: italic;
 }
 
 /* BACKGROUND */
