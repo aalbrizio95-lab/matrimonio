@@ -29,11 +29,6 @@ body {
   opacity: 0.7;
 }
 
-.menu a:nth-child(1) { animation-delay: 0.2s; }
-.menu a:nth-child(2) { animation-delay: 0.4s; }
-.menu a:nth-child(3) { animation-delay: 0.6s; }
-.menu a:nth-child(4) { animation-delay: 0.8s; }
-
 @keyframes menuAppear {
   from {
     transform: translateY(-10px);
@@ -47,13 +42,18 @@ body {
 
 /* HERO */
 .hero {
-  min-height: 100dvh; /* 🔥 FIX MOBILE */
+  position: relative;
+  min-height: 100dvh;
   height: 100dvh;
   background: url("sfondo.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+/* HERO VIAGGIO */
+.hero.viaggio-hero {
+  background: url("viaggio.jpg") center/cover no-repeat;
 }
 
 .hero-small {
@@ -102,7 +102,6 @@ body {
 .name {
   font-size: 120px;
   color: white;
-  font-style: italic;
 }
 
 .and {
@@ -173,7 +172,6 @@ body {
   padding: 15px;
   transform: rotate(-3deg);
   box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  position: relative;
 }
 
 .polaroid.right {
@@ -182,61 +180,6 @@ body {
 
 .polaroid img {
   width: 100%;
-  display: block;
-}
-
-/* SCOTCH */
-.polaroid::before {
-  content: "";
-  width: 70px;
-  height: 20px;
-  background: rgba(255,255,255,0.6);
-  position: absolute;
-  top: -10px;
-  left: 40%;
-  transform: rotate(8deg);
-}
-
-.polaroid::after {
-  content: "";
-  width: 60px;
-  height: 18px;
-  background: rgba(255,255,255,0.5);
-  position: absolute;
-  bottom: -10px;
-  right: 30%;
-  transform: rotate(-10deg);
-}
-
-/* MAPPA */
-.map {
-  width: 100%;
-  height: 250px;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-/* FORM */
-form {
-  max-width: 400px;
-  margin: 30px auto;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-form button {
-  background: #8b6f5c;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
 }
 
 /* VIDEO HERO */
@@ -261,33 +204,45 @@ form button {
   justify-content: center;
 }
 
-/* HEART */
-.heart {
-  display: inline-block;
-  margin-left: 5px;
-  animation: pulse 1.5s infinite;
+/* HERO INFO (RIQUADRO BIANCO) */
+.hero-info {
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
+
+  background: rgba(255,255,255,0.9);
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+  text-align: right;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #5a4b3f;
+
+  z-index: 2;
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.2); }
-  100% { transform: scale(1); }
+.hero-info p {
+  margin: 0;
+}
+
+/* MENU NERO SOLO PAGINA VIAGGIO */
+.viaggio-page .menu a {
+  color: black;
+  text-shadow: none;
+}
+
+/* HERO MATRIMONIO (DESKTOP) */
+.matrimonio-page .hero-small {
+  align-items: flex-start;
+  padding-top: 80px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-.hero-info {
-  right: 20px;
-  bottom: 20px;
-  font-size: 14px;
-}
-.matrimonio-page .hero-small {
-  align-items: center;     /* torna centrato verticalmente */
-  padding-top: 0;         /* rimuove lo spostamento */
-}
-.matrimonio-page .title {
-  transform: translateY(50px) !important;
-}
+
   .grid {
     flex-direction: column;
     text-align: center;
@@ -297,20 +252,10 @@ form button {
     flex-direction: column;
   }
 
-  /* 🔥 FIX DEFINITIVO: ORDINE SEMPRE UGUALE */
-.photo,
-.text {
-  width: 100%;
-}
+  .grid > .photo {
+    margin-bottom: 20px;
+  }
 
-/* 🔥 FORZA FOTO SOPRA SEMPRE */
-.grid {
-  flex-direction: column;
-}
-
-.grid > .photo {
-  margin-bottom: 20px;
-}
   .polaroid {
     transform: rotate(0deg);
     max-width: 500px;
@@ -329,128 +274,21 @@ form button {
     height: 50vh;
   }
 
+  /* HERO INFO MOBILE */
   .hero-info {
     right: 20px;
-    bottom: 20px;
+    bottom: 30px;
     font-size: 14px;
+    padding: 12px 15px;
   }
 
-}
+  /* MATRIMONIO MOBILE */
+  .matrimonio-page .hero-small {
+    align-items: center;
+    padding-top: 0;
+  }
 
-
-}
-
-/* TITOLI FOTO */
-.title-photo {
-  font-size: 30px;
-  font-style: italic;
-  color: #6b5b4d;
-  text-align: center;
-  margin-bottom: 15px;
-}
-
-/* TESTO FOTO */
-.desc-photo {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #6b5b4d;
-  text-align: center;
-  max-width: 400px;
-  margin: auto;
-}
-
-/* LINK HOME */
-.center-home {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.center-home a {
-  font-size: 20px;
-  font-style: italic;
-  color: #6b5b4d;
-  text-decoration: underline;
-  transition: opacity 0.3s;
-}
-
-.center-home a:hover {
-  opacity: 0.7;
-}
-
-/* HERO VIAGGIO */
-.viaggio-hero {
-  height: 100vh;
-  background: url("viaggio.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.viaggio-hero .title {
-  color: #f2e7dc;
-  line-height: 1.2;
-}
-
-/* QR */
-.qr {
-  margin: 40px 0;
-  text-align: center;
-}
-
-.qr img {
-  width: 140px;
-}
-/* INFO HERO (in basso a destra) */
-.hero-info {
-  position: absolute;
-  bottom: 60px;
-  right: 40px;
-  text-align: right;
-  color: white;
-  font-style: italic;
-  font-size: 18px;
-  line-height: 1.6;
-  text-shadow: 0 5px 15px rgba(0,0,0,0.8);
-  z-index: 2;
-}
-.hero-info p {
-  margin: 0;
-  color: white; /* 🔥 forza bianco */
-}
-.hero-info p {
-  margin: 0;
-}
-
-/* MENU NERO SOLO PAGINA VIAGGIO */
-.viaggio-page .menu a {
-  color: black;
-  text-shadow: none;
-}
-.hero {
-  position: relative; /* 🔥 QUESTA È LA CHIAVE */
-}
-.overlay {
-  position: relative;
-  z-index: 1;
-}
-/* HERO MATRIMONIO - alza titolo */
-.matrimonio-page .hero-small {
-  align-items: flex-start; /* sposta verso l’alto */
-  padding-top: 80px;        /* regola fine */
-}
-/* INFO NERE SOLO HOME */
-body:not(.viaggio-page):not(.matrimonio-page) .hero-info {
-  color: #6b5b4d; /* elegante marroncino */
-  text-shadow: none;
-}
-/* INFO SCURE SOLO HOME */
-.home-page .hero-info {
-  color: #6b5b4d;
-  text-shadow: none;
-}
-/* FORZA COLORE HOME */
-.home-page .hero-info,
-.home-page .hero-info p {
-  color: black  !important;
-  text-shadow: none !important;
+  .matrimonio-page .title {
+    transform: translateY(30px) !important;
+  }
 }
