@@ -275,7 +275,11 @@ form button {
 
 /* MOBILE */
 @media (max-width: 768px) {
-
+.hero-info {
+  right: 20px;
+  bottom: 20px;
+  font-size: 14px;
+}
   .grid {
     flex-direction: column;
     text-align: center;
@@ -285,11 +289,20 @@ form button {
     flex-direction: column;
   }
 
-  .photo,
-  .text {
-    width: 100%;
-  }
+  /* 🔥 FIX DEFINITIVO: ORDINE SEMPRE UGUALE */
+.photo,
+.text {
+  width: 100%;
+}
 
+/* 🔥 FORZA FOTO SOPRA SEMPRE */
+.grid {
+  flex-direction: column;
+}
+
+.grid > .photo {
+  margin-bottom: 20px;
+}
   .polaroid {
     transform: rotate(0deg);
     max-width: 500px;
@@ -307,6 +320,16 @@ form button {
   .video-hero {
     height: 50vh;
   }
+
+  .hero-info {
+    right: 20px;
+    bottom: 20px;
+    font-size: 14px;
+  }
+
+}
+
+
 }
 
 /* TITOLI FOTO */
@@ -368,4 +391,42 @@ form button {
 
 .qr img {
   width: 140px;
+}
+/* INFO HERO (in basso a destra) */
+.hero-info {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  text-align: right;
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  text-shadow: 0 5px 15px rgba(0,0,0,0.8);
+  z-index: 2;
+}
+.hero-info p {
+  margin: 0;
+  color: white; /* 🔥 forza bianco */
+}
+.hero-info p {
+  margin: 0;
+}
+
+/* MENU NERO SOLO PAGINA VIAGGIO */
+.viaggio-page .menu a {
+  color: black;
+  text-shadow: none;
+}
+.hero {
+  position: relative; /* 🔥 QUESTA È LA CHIAVE */
+}
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+/* HERO MATRIMONIO - alza titolo */
+.matrimonio-page .hero-small {
+  align-items: flex-start; /* sposta verso l’alto */
+  padding-top: 80px;        /* regola fine */
 }
