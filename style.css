@@ -243,17 +243,25 @@ body {
 /* MOBILE */
 @media (max-width: 768px) {
 
+  .matrimonio-page .title-anim {
+    animation: none;
+  }
+
+  .matrimonio-page .title {
+    transform: translateY(30px);
+  }
+
+}
+
   .grid {
     flex-direction: column;
     text-align: center;
   }
-@media (max-width: 768px) {
 
   .matrimonio-page .title {
     transform: translateY(30px) !important;
   }
 
-}
   .grid.reverse {
     flex-direction: column;
   }
